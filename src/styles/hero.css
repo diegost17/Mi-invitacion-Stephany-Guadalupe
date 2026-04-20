@@ -1,0 +1,79 @@
+.hero-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+
+.hero-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 500px; /* Tamaño máximo para que no se deforme en laptop */
+}
+
+.hero-img {
+  width: 100%;
+  display: block;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 38%; /* Esto empuja el texto justo debajo de la corona */
+}
+
+.hero-tag {
+  color: #a34b4b;
+  font-family: serif;
+  letter-spacing: 3px;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.hero-names {
+  font-family: 'Great Vibes', cursive; /* Asegúrate de importar esta fuente en tu index.html */
+  color: #a34b4b;
+  font-size: 2.8rem;
+  margin: 0;
+}
+
+.hero-date {
+  color: #a34b4b;
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+/* El contador transparente que viste en la imagen */
+.hero-counter {
+  position: absolute;
+  bottom: 25%; /* Ajusta esto para que quede sobre la falda o donde prefieras */
+  display: flex;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+.counter-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #a34b4b;
+}
+
+.counter-item span {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.counter-item small {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
