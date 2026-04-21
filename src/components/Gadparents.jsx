@@ -28,11 +28,9 @@ export default function Gadparents() {
 
           {/* Bloque Padrinos */}
           <div className="family-group" style={{ marginTop: '40px' }}>
-            <h2 className="group-title">Y mis padrinos.</h2>
+            <h2 className="group-title">Tiene el honor de invitarles a la celbracion de los quinc años de</h2>
             <div className="names-container">
-              <p className="script-font">Nombre del Padrino</p>
-              <span className="ampersand">&</span>
-              <p className="script-font">Nombre de la Madrina</p>
+              <p className="script-font">Stephany Guadalupe</p>
             </div>
           </div>
         </div>
