@@ -1,21 +1,33 @@
 .events-section {
-  padding: 60px 20px;
+  padding: 80px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  background-color: #fff;
+  
+  /* AJUSTES DE FONDO */
+  background-repeat: no-repeat;
+  background-position: center;
+  /* 'cover' es lo que hace que se vea gigante. 
+     Cambiamos a '100% 100%' para que la imagen se fuerce a entrar 
+     completamente en el alto y ancho de la sección */
+  background-size: 100% 100%; 
+  
+  /* Color de respaldo por si la imagen tarda en cargar */
+  background-color: #fff; 
 }
 
 .event-card {
   width: 100%;
   max-width: 350px;
   padding: 40px 20px;
-  border: 1px solid #c70202; /* Borde dorado como la imagen */
+  border: 1px solid #c70202;
   border-radius: 15px;
   text-align: center;
-  background-color: #fdfafb;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  /* Le damos un fondo blanco con transparencia para que se vea el fondo atrás 
+     pero se pueda leer bien el texto */
+  background-color: rgba(255, 255, 255, 0.85); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .event-icon {

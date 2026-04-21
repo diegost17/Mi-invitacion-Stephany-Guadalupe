@@ -3,14 +3,10 @@ import fondoEventos from "../assets/fondo3.png";
 
 export default function EventInfo() {
   return (
-    
-    <section className="events-section">
-      <section 
+    <section 
       className="events-section" 
       style={{ backgroundImage: `url(${fondoEventos})` }}
     >
-      {/* Todo tu código de tarjetas igual... */}
-    </section>
       {/* TARJETA 1: CEREMONIA RELIGIOSA */}
       <div className="event-card">
         <div className="event-icon">⛪</div>
@@ -21,7 +17,7 @@ export default function EventInfo() {
         
         <button 
           className="event-btn"
-          onClick={() => window.open("https://maps.google.com", "_blank")}
+          onClick={() => window.open("https://maps.google.com/?q=Parroquia+San+Juan+Bautista", "_blank")}
         >
           VER UBICACIÓN
         </button>
@@ -37,7 +33,7 @@ export default function EventInfo() {
         
         <button 
           className="event-btn"
-          onClick={() => window.open("https://maps.google.com", "_blank")}
+          onClick={() => window.open("https://maps.google.com/?q=Salon+El+Castillo", "_blank")}
         >
           VER UBICACIÓN
         </button>
