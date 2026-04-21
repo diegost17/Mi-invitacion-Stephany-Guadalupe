@@ -4,19 +4,20 @@ import fondoFlores from "../assets/fondo2.jpg";
 export default function Gadparents() {
   return (
     <section className="family-section">
-      {/* BANNER ROJO - Frase de invitación */}
+      {/* BANNER ROJO */}
       <div className="invite-banner">
         <p>¡Es mi fiesta, es mi día y lo quiero compartir con todos mis amigos y familia!</p>
         <p>¡Te espero para disfrutar juntos!</p>
       </div>
 
-      {/* SECCIÓN PADRES Y PADRINOS CON FONDO */}
+      {/* CONTENEDOR CON FONDO */}
       <div 
         className="family-container" 
         style={{ backgroundImage: `url(${fondoFlores})` }}
       >
         <div className="family-overlay">
-          {/* Bloque Padres */}
+          
+          {/* 1. Bloque Padres */}
           <div className="family-group">
             <h2 className="group-title">Con la bendición de Dios y de mis padres.</h2>
             <div className="names-container">
@@ -26,13 +27,26 @@ export default function Gadparents() {
             </div>
           </div>
 
-          {/* Bloque Padrinos */}
+          {/* 2. Bloque Stephany con líneas */}
           <div className="family-group" style={{ marginTop: '40px' }}>
-            <h2 className="group-title">Tiene el honor de invitarles a la celbracion de los quinc años de</h2>
+            <h2 className="group-title">Tiene el honor de invitarles a la celebración de los quince años de:</h2>
+            <div className="divider"></div>
             <div className="names-container">
-              <p className="script-font">Stephany Guadalupe</p>
+              <p className="script-font main-name">Stephany Guadalupe</p>
+            </div>
+            <div className="divider"></div>
+          </div>
+
+          {/* 3. Cuadro de Padrinos (Abajo de Stephany) */}
+          <div className="padrinos-box">
+            <p className="section-tag">Y MIS PADRINOS</p>
+            <div className="names-container">
+              <p className="script-font">Nombre del Padrino</p>
+              <span className="ampersand">&</span>
+              <p className="script-font">Nombre de la Madrina</p>
             </div>
           </div>
+
         </div>
       </div>
     </section>
