@@ -1,5 +1,5 @@
 import "../styles/hero.css";
-import hero from "../assets/hero2.jpg";
+import hero from "../assets/hero3.jpg";
 import useCountdown from "../hooks/useCountdown";
 import { config } from "../data/config";
 
