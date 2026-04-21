@@ -79,17 +79,19 @@ body, html {
 .hero-counter {
   display: flex;
   gap: 15px;
-  /* Fondo blanco muy transparente */
   background: rgba(255, 255, 255, 0.3); 
-  /* El secreto: desenfoque de fondo */
   backdrop-filter: blur(10px); 
   -webkit-backdrop-filter: blur(10px);
   
-  padding: 15px 25px;
+  /* Ajusta el relleno interno (que se vea simétrico) */
+  padding: 15px 25px; 
+
+  /* --- ESTO ES LO QUE BAJA EL CUADRO --- */
+  /* Aumenta este número para que se aleje más de la fecha */
+  margin-top: 150px; 
+
   border-radius: 20px;
-  /* Un borde blanco finito para que resalte más */
   border: 1px solid rgba(255, 255, 255, 0.4); 
-  /* Sombra suave para dar profundidad */
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1); 
 }
 
