@@ -1,13 +1,17 @@
+@keyframes heartBeat {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
 .featured-main-container {
   width: 100%;
   background-color: #fff;
 }
 
-/* Contenedor de la frase: Fondo blanco para legibilidad */
 .growth-phrase-wrapper {
   padding: 60px 20px 40px;
   text-align: center;
-  background-color: #ffffff;
 }
 
 .growth-phrase {
@@ -24,14 +28,13 @@
   margin: 0 auto;
 }
 
-/* Área de las fotos con la imagen de fondo */
 .photos-background-area {
   padding: 60px 20px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% 100%; /* Para que las flores no se corten */
+  background-size: 100% 100%; 
   display: flex;
-  justify-content: center; /* Centra horizontalmente el contenedor de fotos */
+  justify-content: center;
   align-items: center;
 }
 
@@ -39,20 +42,27 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  width: 90%; /* Ajuste para que no pegue a los bordes en cel */
+  width: 90%;
   max-width: 900px;
-  align-items: center; /* Centra las fotos una sobre otra en cel */
+  align-items: center;
 }
 
+/* --- CAMBIO AQUÍ --- */
 .photo-frame {
   position: relative;
   overflow: hidden;
   border-radius: 20px;
-  border: 4px solid #fff; /* Marco blanco tipo foto real */
-  outline: 2px solid #d4af37; /* Hilo dorado exterior */
+  border: 4px solid #fff;
+  outline: 2px solid #d80505; /* Tu borde rojo fuerte */
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-  transition: transform 0.4s ease;
-  max-width: 400px; /* Evita que las fotos se hagan gigantes */
+  max-width: 400px;
+  /* IMPORTANTE: No pongas 'animation' aquí, para que no empiece antes de tiempo */
+}
+
+/* Esta es la regla clave: AOS añade 'aos-animate' cuando el elemento entra en vista */
+.photo-frame.aos-animate {
+  animation: heartBeat 4s ease-in-out infinite;
+  animation-delay: 0.5s; /* Espera un poquito a que termine de entrar para empezar a latir */
 }
 
 .featured-img {
@@ -61,14 +71,12 @@
   display: block;
 }
 
-/* Ajuste para MSI y pantallas anchas */
 @media (min-width: 768px) {
   .featured-container {
     flex-direction: row;
-    justify-content: center; /* Centra las dos fotos juntas */
+    justify-content: center;
     gap: 40px;
   }
-
   .photo-frame {
     flex: 1;
     max-width: 450px;
