@@ -11,13 +11,14 @@ export default function EventInfo() {
       <div className="event-card">
         <div className="event-icon">⛪</div>
         <h3 className="event-title">Ceremonia Religiosa</h3>
-        <p className="event-detail">16:00 HRS</p>
-        <p className="event-location-name">Parroquia de San Juan Bautista</p>
-        <p className="event-address">Calle Principal #45, Col. Centro</p>
+        <p className="event-detail">14:15 HRS</p>
+        <p className="event-location-name">Parroquia de San Miguel Arcangel</p>
+        <p className="event-address">Col. San Miguel Xico 1ra Sección.
+Valle de Chalco</p>
         
         <button 
           className="event-btn"
-          onClick={() => window.open("https://maps.google.com/?q=Parroquia+San+Juan+Bautista", "_blank")}
+          onClick={() => window.open("https://maps.app.goo.gl/3ENvWnYk9vNCa1P5A", "_blank")}
         >
           VER UBICACIÓN
         </button>
@@ -27,13 +28,14 @@ export default function EventInfo() {
       <div className="event-card">
         <div className="event-icon">🥂</div>
         <h3 className="event-title">Recepción</h3>
-        <p className="event-detail">18:00 HRS</p>
-        <p className="event-location-name">Salón de Eventos "El Castillo"</p>
-        <p className="event-address">Av. de las Rosas #123, Ciudad de México</p>
+        <p className="event-detail">16:00 HRS</p>
+        <p className="event-address">Calle Emiliano Zapata Mz 4 Lt 3
+San Miguel Xico 1ra Sección.
+Valle de chalco, cerrada de la Virgen</p>
         
         <button 
           className="event-btn"
-          onClick={() => window.open("https://maps.google.com/?q=Salon+El+Castillo", "_blank")}
+          onClick={() => window.open("https://maps.app.goo.gl/JitiUAEASPqrysoY7", "_blank")}
         >
           VER UBICACIÓN
         </button>
