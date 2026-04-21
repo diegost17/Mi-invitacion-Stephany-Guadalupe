@@ -30,7 +30,7 @@
 
 .family-overlay {
   /* 0.6 es más transparente, 0.9 es casi blanco sólido. Prueba con 0.5 o 0.6 */
-  background-color: rgba(255, 255, 255, 0.4); 
+  background-color: rgba(255, 255, 255, 0.1); 
   width: 90%;
   max-width: 450px;
   padding: 40px 20px;
@@ -44,7 +44,7 @@
 .group-title {
   color: #893446;
   font-family: serif;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin-bottom: 20px;
   font-weight: normal;
 }
@@ -66,22 +66,22 @@
 
 /* Línea divisoria elegante */
 .divider {
-  width: 80%;
+  width: 88%;
   height: 1px;
   background: linear-gradient(to right, transparent, #893446, transparent);
-  margin: 15px auto;
+  margin: 25px auto;
 }
 
 /* El nombre principal un poco más grande */
 .main-name {
   font-size: 3.2rem !important;
-  margin: 20px 0 !important;
+  margin: 25px 0 !important;
 }
 
 /* Nuevo recuadro para los padrinos */
 .padrinos-box {
   margin-top: 30px;
-  border: 1px solid #893446;
+  border: 0.5px solid #893446;
   padding: 20px;
   border-radius: 12px;
   width: 100%; /* Para que ocupe el ancho del overlay */

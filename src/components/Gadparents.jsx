@@ -41,9 +41,9 @@ export default function Gadparents() {
           <div className="padrinos-box">
             <p className="section-tag">Y MIS PADRINOS</p>
             <div className="names-container">
-              <p className="script-font">Nombre del Padrino</p>
+              <p className="script-font">Daniel Ortega Jarquín</p>
               <span className="ampersand">&</span>
-              <p className="script-font">Nombre de la Madrina</p>
+              <p className="script-font">Isamar Bañuelos Lopez</p>
             </div>
           </div>
 
