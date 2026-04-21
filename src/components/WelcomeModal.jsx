@@ -2,21 +2,21 @@ import { useState } from "react";
 import "../styles/welcomeModal.css";
 
 export default function WelcomeModal({ onStart }) {
-  const [isOpen, setIsOpen] = useState(true);
+  const [visible, setVisible] = useState(true);
 
-  const handleStart = () => {
-    setIsOpen(false);
-    if (onStart) onStart(); // Aquí activamos la música
+  const handleOpen = () => {
+    setVisible(false); // ESTO QUITA EL MODAL DE LA PANTALLA
+    if (onStart) onStart();
   };
 
-  if (!isOpen) return null;
+  if (!visible) return null; // Si no es visible, no renderiza NADA
 
   return (
     <div className="modal-overlay">
       <div className="modal-content">
         <h2>¡Bienvenido!</h2>
         <p>Haz clic en "Abrir Invitación" para continuar.</p>
-        <button onClick={handleStart} className="modal-btn">
+        <button onClick={handleOpen} className="modal-btn">
           Abrir Invitación
         </button>
       </div>

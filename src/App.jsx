@@ -12,9 +12,10 @@ function App() {
 //Animaciones
 useEffect(() => {
     AOS.init({
-      duration: 1000, // mil milisegundos = 1 segundo
-      once: false,
-      mirror: true
+      duration: 800,
+      delay: 0,
+      offset: 0, // Esto hace que se activen apenas aparezcan en pantalla
+      once: true
     });
     // Esto fuerza a AOS a detectar los elementos al cargar
     AOS.refresh(); 
@@ -25,7 +26,13 @@ useEffect(() => {
 
   const iniciarInvitacion = () => {
     audioRef.current.loop = true;
-    audioRef.current.play().catch(err => console.log("Error al reproducir:", err));
+    audioRef.current.play().catch(err => console.log("Error:", err));
+    
+    // Esto es CLAVE: Forza a las animaciones a despertar 
+    // justo cuando el modal desaparece
+    setTimeout(() => {
+      AOS.refreshHard();
+    }, 100);
   };
 
   return (

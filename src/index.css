@@ -4,3 +4,22 @@ body, html {
   width: 100%;
   overflow-x: hidden; /* Evita que la página se mueva hacia los lados */
 }
+/* Fuerza a que los elementos sean visibles si AOS se traba */
+body {
+  overflow-x: hidden;
+}
+
+[data-aos] {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out !important;
+}
+
+/* Solo aplica la animación si AOS está activo */
+.aos-init[data-aos] {
+  opacity: 0;
+}
+.aos-animate[data-aos] {
+  opacity: 1;
+  transform: translateZ(0);
+}
