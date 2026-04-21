@@ -11,7 +11,7 @@
   width: 100%;
   max-width: 350px;
   padding: 40px 20px;
-  border: 1px solid #d4af37; /* Borde dorado como la imagen */
+  border: 1px solid #c70202; /* Borde dorado como la imagen */
   border-radius: 15px;
   text-align: center;
   background-color: #fdfafb;
@@ -51,7 +51,7 @@
 }
 
 .event-btn {
-  background-color: #d4af37; /* Color dorado del botón */
+  background-color: #bd3834; /* Color dorado del botón */
   color: white;
   border: none;
   padding: 12px 30px;

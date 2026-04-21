@@ -1,8 +1,16 @@
 import "../styles/eventInfo.css";
+import fondoEventos from "../assets/fondo3.png"; 
 
 export default function EventInfo() {
   return (
+    
     <section className="events-section">
+      <section 
+      className="events-section" 
+      style={{ backgroundImage: `url(${fondoEventos})` }}
+    >
+      {/* Todo tu código de tarjetas igual... */}
+    </section>
       {/* TARJETA 1: CEREMONIA RELIGIOSA */}
       <div className="event-card">
         <div className="event-icon">⛪</div>
