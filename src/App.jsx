@@ -28,11 +28,11 @@ useEffect(() => {
     audioRef.current.loop = true;
     audioRef.current.play().catch(err => console.log("Error:", err));
     
-    // Esto es CLAVE: Forza a las animaciones a despertar 
-    // justo cuando el modal desaparece
+    // Dale un tiempo a que el Modal desaparezca del DOM
     setTimeout(() => {
-      AOS.refreshHard();
-    }, 100);
+      AOS.refresh();
+      window.dispatchEvent(new Event('resize')); // El truco final para forzar la detección
+    }, 500);
   };
 
   return (
