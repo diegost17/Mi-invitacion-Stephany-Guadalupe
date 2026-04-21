@@ -48,7 +48,7 @@ body, html {
   align-items: center;
   /* --- CONTROL DE POSICIÓN --- */
   /* Ajusta este valor para bajar o subir TODO el bloque (Nombre, Fecha, Contador) */
-  padding-top: 65%; 
+  padding-top: 72%; 
 }
 
 .hero-tag {
