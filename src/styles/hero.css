@@ -1,18 +1,39 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: white; /* O el color que prefieras */
+}
+
 .hero-section {
   width: 100%;
+  height: 100vh; /* Ocupa toda la pantalla del cel */
   display: flex;
   justify-content: center;
-  background-color: #f0f0f0;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Evita scrolls raros */
 }
 
 .hero-wrapper {
   position: relative;
   width: 100%;
-  max-width: 500px; /* Tamaño máximo para que no se deforme en laptop */
+  height: 100%; /* Forzamos a que llene el alto */
+  max-width: 450px;
 }
 
 .hero-img {
   width: 100%;
+  height: 100%;
+  object-fit: fill; /* Esto estira la imagen para que no queden bordes blancos */
   display: block;
 }
 
@@ -25,55 +46,68 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 38%; /* Esto empuja el texto justo debajo de la corona */
+  /* --- CONTROL DE POSICIÓN --- */
+  /* Ajusta este valor para bajar o subir TODO el bloque (Nombre, Fecha, Contador) */
+  padding-top: 55%; 
 }
 
 .hero-tag {
-  color: #a34b4b;
+  color: #893446;
   font-family: serif;
-  letter-spacing: 3px;
-  font-size: 1.1rem;
-  margin-bottom: 10px;
+  letter-spacing: 4px;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
 }
 
 .hero-names {
-  font-family: 'Great Vibes', cursive; /* Asegúrate de importar esta fuente en tu index.html */
-  color: #a34b4b;
-  font-size: 2.8rem;
-  margin: 0;
+  font-family: 'Great Vibes', cursive;
+  color: #893446;
+  font-size: clamp(2.5rem, 10vw, 3.2rem);
+  margin: 0; /* Quitamos márgenes para que la fecha pegue más */
+  text-align: center;
+  line-height: 1;
 }
 
 .hero-date {
-  color: #a34b4b;
+  color: #893446;
+  font-family: serif;
   font-size: 1.2rem;
-  margin-top: 5px;
+  margin: 10px 0 20px 0; /* Ajusta el 20px para separar el contador de la fecha */
 }
 
-/* El contador transparente que viste en la imagen */
+/* El Contador Estilo Cristal */
 .hero-counter {
-  position: absolute;
-  bottom: 25%; /* Ajusta esto para que quede sobre la falda o donde prefieras */
   display: flex;
-  gap: 15px;
-  background: rgba(255, 255, 255, 0.2);
-  padding: 10px 20px;
-  border-radius: 10px;
-  backdrop-filter: blur(5px);
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 10px 15px;
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* Quitamos position absolute para que aparezca justo debajo de la fecha */
 }
 
 .counter-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #a34b4b;
+  min-width: 40px;
 }
 
 .counter-item span {
+  color: #893446;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .counter-item small {
-  font-size: 0.7rem;
+  color: #893446;
+  font-size: 0.6rem;
   text-transform: uppercase;
+}
+
+/* Responsividad para pantallas muy pequeñas */
+@media (max-width: 370px) {
+  .hero-names { font-size: 2.2rem; }
+  .hero-counter { gap: 8px; padding: 8px 12px; }
 }
