@@ -1,0 +1,75 @@
+.events-section {
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  background-color: #fff;
+}
+
+.event-card {
+  width: 100%;
+  max-width: 350px;
+  padding: 40px 20px;
+  border: 1px solid #d4af37; /* Borde dorado como la imagen */
+  border-radius: 15px;
+  text-align: center;
+  background-color: #fdfafb;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.event-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.event-title {
+  font-family: 'Playfair Display', serif;
+  color: #893446;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.event-detail {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.event-location-name {
+  font-family: 'serif';
+  color: #893446;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.event-address {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.event-btn {
+  background-color: #d4af37; /* Color dorado del botón */
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+  letter-spacing: 1px;
+}
+
+.event-btn:active {
+  transform: scale(0.95);
+}
+
+/* Responsivo: Si la pantalla es ancha, se ponen de lado */
+@media (min-width: 768px) {
+  .events-section {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
