@@ -1,65 +1,54 @@
-.godparents-section {
+.family-section {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #fff;
-  padding-bottom: 50px;
 }
 
-/* Cuadro de los Padres (El de arriba) */
-.parents-card {
-  width: 90%;
-  max-width: 400px;
-  background-color: #fdfafb;
-  border: 1px solid #893446; /* El borde color vino */
-  padding: 30px 20px;
+.invite-banner {
+  background-color: #c62828; /* Rojo de la imagen */
+  color: white;
+  padding: 35px 20px;
   text-align: center;
-  border-radius: 10px;
-  margin-top: -20px; /* Para que se encime un poco si es necesario */
-  z-index: 2;
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.4rem;
+  line-height: 1.4;
 }
 
-.section-tag {
+.family-container {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.family-overlay {
+  background-color: rgba(255, 255, 255, 0.8); /* Efecto blanquito sobre las flores */
+  width: 90%;
+  max-width: 450px;
+  padding: 40px 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.group-title {
   color: #893446;
   font-family: serif;
-  font-size: 0.8rem;
-  letter-spacing: 2px;
-  margin-bottom: 15px;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  font-weight: normal;
 }
 
-.names-group p {
-  font-family: 'Playfair Display', serif;
-  color: #333;
-  font-size: 1.2rem;
+.script-font {
+  font-family: 'Great Vibes', cursive;
+  color: #c62828; /* Rojo para los nombres */
+  font-size: 2.2rem;
   margin: 5px 0;
 }
 
-/* Sección de Padrinos (La de abajo) */
-.godparents-container {
-  width: 100%;
-  min-height: 250px;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  position: relative;
-}
-
-/* Capa blanca semitransparente sobre la imagen de fondo */
-.godparents-content {
-  background-color: rgba(255, 255, 255, 0.85); 
-  width: 90%;
-  max-width: 400px;
-  padding: 40px 20px;
-  text-align: center;
-  border-radius: 10px;
-}
-
-.names-group.highlight p {
-  font-family: 'Great Vibes', cursive; /* Estilo más elegante para padrinos */
+.ampersand {
+  font-family: 'Great Vibes', cursive;
+  color: #c62828;
   font-size: 1.8rem;
-  color: #893446;
+  display: block;
+  margin: -10px 0;
 }

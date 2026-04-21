@@ -1,28 +1,39 @@
 import "../styles/gadparents.css";
-import fondoPadrinos from "../assets/fondo2.jpg"; 
+import fondoFlores from "../assets/fondo2.jpg"; 
 
 export default function Gadparents() {
   return (
-    <section className="godparents-section">
-      {/* Recuadro de los Padres */}
-      <div className="parents-card">
-        <p className="section-tag">CON LA BENDICIÓN DE MIS PADRES</p>
-        <div className="names-group">
-          <p>Nombre del Padre</p>
-          <p>Nombre de la Madre</p>
-        </div>
+    <section className="family-section">
+      {/* BANNER ROJO - Frase de invitación */}
+      <div className="invite-banner">
+        <p>¡Es mi fiesta, es mi día y lo quiero compartir con todos mis amigos y familia!</p>
+        <p>¡Te espero para disfrutar juntos!</p>
       </div>
 
-      {/* Sección Blanca con Imagen de Fondo para Padrinos */}
+      {/* SECCIÓN PADRES Y PADRINOS CON FONDO */}
       <div 
-        className="godparents-container" 
-        style={{ backgroundImage: `url(${fondoPadrinos})` }}
+        className="family-container" 
+        style={{ backgroundImage: `url(${fondoFlores})` }}
       >
-        <div className="godparents-content">
-          <p className="section-tag">Y MIS PADRINOS</p>
-          <div className="names-group highlight">
-            <p>Nombre del Padrino</p>
-            <p>Nombre de la Madrina</p>
+        <div className="family-overlay">
+          {/* Bloque Padres */}
+          <div className="family-group">
+            <h2 className="group-title">Con la bendición de Dios y de mis padres.</h2>
+            <div className="names-container">
+              <p className="script-font">Omar Domínguez Maldonado</p>
+              <span className="ampersand">&</span>
+              <p className="script-font">Carolina López Ventura</p>
+            </div>
+          </div>
+
+          {/* Bloque Padrinos */}
+          <div className="family-group" style={{ marginTop: '40px' }}>
+            <h2 className="group-title">Y mis padrinos.</h2>
+            <div className="names-container">
+              <p className="script-font">Nombre del Padrino</p>
+              <span className="ampersand">&</span>
+              <p className="script-font">Nombre de la Madrina</p>
+            </div>
           </div>
         </div>
       </div>
