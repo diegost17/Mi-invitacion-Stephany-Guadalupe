@@ -1,4 +1,4 @@
-import "../styles/Hero.css";
+import "../styles/hero.css";
 import hero from "../assets/hero.png";
 import useCountdown from "../hooks/useCountdown";
 import { config } from "../data/config";
