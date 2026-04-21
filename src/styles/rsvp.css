@@ -1,0 +1,23 @@
+.footer-banner-section {
+  width: 100%;
+  padding: 80px 20px; /* Espaciado para que se vea amplio */
+  background-color: #b12e3e; /* Rojo sólido intenso */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.final-quote {
+  color: #ffffff !important; /* Letras blancas */
+  font-size: 3.5rem; /* Tamaño grande para que destaque */
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Si quieres que se vea mejor en móviles */
+@media (max-width: 600px) {
+  .final-quote {
+    font-size: 2rem;
+  }
+}

@@ -3,10 +3,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Hero from "./components/Hero";
 import EventInfo from "./components/EventInfo";
-import Gallery from "./components/Gallery";
 import WelcomeModal from "./components/WelcomeModal";
 import cancion from "./assets/cancion1.mp3"; 
 import Gadparents from "./components/Gadparents";
+import rsvp from "./components/RSVP";
+import RSVP from "./components/RSVP";
 
 function App() {
 //Animaciones
@@ -42,7 +43,7 @@ useEffect(() => {
         <Hero />
         <Gadparents />
         <EventInfo />
-        <Gallery />
+        <RSVP />
       </main>
     </>
   );
