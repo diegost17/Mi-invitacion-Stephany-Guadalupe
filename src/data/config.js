@@ -1,6 +1,6 @@
 export const config = {
   names: "Stephany & Guadalupe",
-  date: "2026-12-20T00:00:00",
+  date: "2026-05-30T00:00:00",
   location: "Salón Jardín",
   mapsUrl: "https://maps.google.com/?q=Mexico",
   gallery: [
