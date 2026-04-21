@@ -4,6 +4,7 @@ import EventInfo from "./components/EventInfo";
 import Gallery from "./components/Gallery";
 import WelcomeModal from "./components/WelcomeModal";
 import cancion from "./assets/cancion1.mp3"; 
+import Gadparents from "./components/Gadparents";
 
 function App() {
   // Solo creamos el audio UNA vez usando useRef
@@ -16,12 +17,10 @@ function App() {
 
   return (
     <>
-      {/* El Modal es el que manda la señal para iniciar el audio */}
       <WelcomeModal onStart={iniciarInvitacion} />
-      
       <main>
-        {/* Quitamos <AudioPlayer /> de aquí, ya no lo necesitas */}
         <Hero />
+        <Gadparents />
         <EventInfo />
         <Gallery />
       </main>

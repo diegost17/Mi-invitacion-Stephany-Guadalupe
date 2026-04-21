@@ -1,0 +1,65 @@
+.godparents-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding-bottom: 50px;
+}
+
+/* Cuadro de los Padres (El de arriba) */
+.parents-card {
+  width: 90%;
+  max-width: 400px;
+  background-color: #fdfafb;
+  border: 1px solid #893446; /* El borde color vino */
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: -20px; /* Para que se encime un poco si es necesario */
+  z-index: 2;
+}
+
+.section-tag {
+  color: #893446;
+  font-family: serif;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.names-group p {
+  font-family: 'Playfair Display', serif;
+  color: #333;
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+/* Sección de Padrinos (La de abajo) */
+.godparents-container {
+  width: 100%;
+  min-height: 250px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+/* Capa blanca semitransparente sobre la imagen de fondo */
+.godparents-content {
+  background-color: rgba(255, 255, 255, 0.85); 
+  width: 90%;
+  max-width: 400px;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.names-group.highlight p {
+  font-family: 'Great Vibes', cursive; /* Estilo más elegante para padrinos */
+  font-size: 1.8rem;
+  color: #893446;
+}
