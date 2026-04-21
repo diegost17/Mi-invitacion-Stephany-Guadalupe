@@ -12,7 +12,7 @@ export default function Hero() {
         <img src={hero} alt="Invitación" className="hero-img" />
         <div className="hero-overlay">
           <p className="hero-tag">MIS XV AÑOS</p>
-          <h3 className="hero-names">Stephany <br/> Guadalupe</h3>
+          <h3 className="hero-names">Stephany Guadalupe</h3>
           <p className="hero-date">30 • Mayo • 2026</p>
 
           <div className="hero-counter">
