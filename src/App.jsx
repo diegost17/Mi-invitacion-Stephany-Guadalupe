@@ -1,4 +1,6 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Hero from "./components/Hero";
 import EventInfo from "./components/EventInfo";
 import Gallery from "./components/Gallery";
@@ -7,7 +9,18 @@ import cancion from "./assets/cancion1.mp3";
 import Gadparents from "./components/Gadparents";
 
 function App() {
-  // Solo creamos el audio UNA vez usando useRef
+//Animaciones
+useEffect(() => {
+    AOS.init({
+      duration: 1000, // mil milisegundos = 1 segundo
+      once: false,
+      mirror: true
+    });
+    // Esto fuerza a AOS a detectar los elementos al cargar
+    AOS.refresh(); 
+  }, []);
+
+// Audio
   const audioRef = useRef(new Audio(cancion));
 
   const iniciarInvitacion = () => {

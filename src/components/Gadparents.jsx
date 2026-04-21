@@ -4,21 +4,19 @@ import fondoFlores from "../assets/fondo2.jpg";
 export default function Gadparents() {
   return (
     <section className="family-section">
-      {/* BANNER ROJO */}
-      <div className="invite-banner">
+      {/* Animación: Deslizar desde arriba */}
+      <div className="invite-banner" data-aos="fade-down">
         <p>¡Es mi fiesta, es mi día y lo quiero compartir con todos mis amigos y familia!</p>
         <p>¡Te espero para disfrutar juntos!</p>
       </div>
 
-      {/* CONTENEDOR CON FONDO */}
       <div 
         className="family-container" 
         style={{ backgroundImage: `url(${fondoFlores})` }}
       >
         <div className="family-overlay">
-          
-          {/* 1. Bloque Padres */}
-          <div className="family-group">
+          {/* Animación: Deslizar desde la izquierda */}
+          <div className="family-group" data-aos="fade-right">
             <h2 className="group-title">Con la bendición de Dios y de mis padres.</h2>
             <div className="names-container">
               <p className="script-font">Omar Domínguez Maldonado</p>
@@ -27,8 +25,8 @@ export default function Gadparents() {
             </div>
           </div>
 
-          {/* 2. Bloque Stephany con líneas */}
-          <div className="family-group" style={{ marginTop: '40px' }}>
+          {/* Animación: Zoom suave */}
+          <div className="family-group" style={{ marginTop: '40px' }} data-aos="zoom-in">
             <h2 className="group-title">Tiene el honor de invitarles a la celebración de los quince años de:</h2>
             <div className="divider"></div>
             <div className="names-container">
@@ -37,16 +35,15 @@ export default function Gadparents() {
             <div className="divider"></div>
           </div>
 
-          {/* 3. Cuadro de Padrinos (Abajo de Stephany) */}
-          <div className="padrinos-box">
+          {/* Animación: Deslizar desde abajo */}
+          <div className="padrinos-box" data-aos="fade-up">
             <p className="section-tag">Y MIS PADRINOS</p>
             <div className="names-container">
-              <p className="script-font">Daniel Ortega Jarquín</p>
+              <p className="script-font">Nombre del Padrino</p>
               <span className="ampersand">&</span>
-              <p className="script-font">Isamar Bañuelos Lopez</p>
+              <p className="script-font">Nombre de la Madrina</p>
             </div>
           </div>
-
         </div>
       </div>
     </section>
