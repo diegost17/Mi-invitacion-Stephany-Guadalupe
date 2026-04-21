@@ -48,7 +48,7 @@ body, html {
   align-items: center;
   /* --- CONTROL DE POSICIÓN --- */
   /* Ajusta este valor para bajar o subir TODO el bloque (Nombre, Fecha, Contador) */
-  padding-top: 55%; 
+  padding-top: 65%; 
 }
 
 .hero-tag {
@@ -62,48 +62,55 @@ body, html {
 .hero-names {
   font-family: 'Great Vibes', cursive;
   color: #893446;
-  font-size: clamp(2.5rem, 10vw, 3.2rem);
-  margin: 0; /* Quitamos márgenes para que la fecha pegue más */
-  text-align: center;
+  font-size: 3rem;
+  margin: 0;
   line-height: 1;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.5); /* Sutil brillo para legibilidad */
 }
 
 .hero-date {
   color: #893446;
   font-family: serif;
   font-size: 1.2rem;
-  margin: 10px 0 20px 0; /* Ajusta el 20px para separar el contador de la fecha */
+  margin: 15px 0 25px 0; /* 25px es el espacio entre fecha y contador */
 }
 
 /* El Contador Estilo Cristal */
 .hero-counter {
   display: flex;
-  gap: 10px;
-  background: rgba(255, 255, 255, 0.418);
-  padding: 10px 15px;
-  border-radius: 12px;
-  backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  /* Quitamos position absolute para que aparezca justo debajo de la fecha */
+  gap: 15px;
+  /* Fondo blanco muy transparente */
+  background: rgba(255, 255, 255, 0.3); 
+  /* El secreto: desenfoque de fondo */
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);
+  
+  padding: 15px 25px;
+  border-radius: 20px;
+  /* Un borde blanco finito para que resalte más */
+  border: 1px solid rgba(255, 255, 255, 0.4); 
+  /* Sombra suave para dar profundidad */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1); 
 }
 
 .counter-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 40px;
+  min-width: 50px;
 }
 
 .counter-item span {
-  color: #893446;
+  color: #893446; /* Color de los números */
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
 }
 
 .counter-item small {
-  color: #893446;
-  font-size: 0.6rem;
+  color: #893446; /* Color de las etiquetas (Días, Hrs...) */
+  font-size: 0.7rem;
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 /* Responsividad para pantallas muy pequeñas */
