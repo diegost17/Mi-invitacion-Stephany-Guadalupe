@@ -1,0 +1,76 @@
+.featured-main-container {
+  width: 100%;
+  background-color: #fff;
+}
+
+/* Contenedor de la frase: Fondo blanco para legibilidad */
+.growth-phrase-wrapper {
+  padding: 60px 20px 40px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.growth-phrase {
+  color: #893446;
+  font-size: 2.2rem;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.growth-divider {
+  width: 80px;
+  height: 2px;
+  background-color: #d4af37;
+  margin: 0 auto;
+}
+
+/* Área de las fotos con la imagen de fondo */
+.photos-background-area {
+  padding: 60px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%; /* Para que las flores no se corten */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el contenedor de fotos */
+  align-items: center;
+}
+
+.featured-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 90%; /* Ajuste para que no pegue a los bordes en cel */
+  max-width: 900px;
+  align-items: center; /* Centra las fotos una sobre otra en cel */
+}
+
+.photo-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 4px solid #fff; /* Marco blanco tipo foto real */
+  outline: 2px solid #d4af37; /* Hilo dorado exterior */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease;
+  max-width: 400px; /* Evita que las fotos se hagan gigantes */
+}
+
+.featured-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Ajuste para MSI y pantallas anchas */
+@media (min-width: 768px) {
+  .featured-container {
+    flex-direction: row;
+    justify-content: center; /* Centra las dos fotos juntas */
+    gap: 40px;
+  }
+
+  .photo-frame {
+    flex: 1;
+    max-width: 450px;
+  }
+}

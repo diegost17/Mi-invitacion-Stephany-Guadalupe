@@ -8,6 +8,8 @@ import cancion from "./assets/cancion1.mp3";
 import Gadparents from "./components/Gadparents";
 import rsvp from "./components/RSVP";
 import RSVP from "./components/RSVP";
+import FeaturedPhotos from "./components/FeaturedPhotos";
+
 
 function App() {
 //Animaciones
@@ -42,6 +44,7 @@ useEffect(() => {
       <main>
         <Hero />
         <Gadparents />
+        <FeaturedPhotos />
         <EventInfo />
         <RSVP />
       </main>
