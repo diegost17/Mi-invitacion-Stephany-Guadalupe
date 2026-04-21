@@ -19,7 +19,7 @@ export default function Hero() {
           <div className="hero-counter">
             <div className="counter-item"><span>{d}</span><small>Días</small></div>
             <div className="counter-item"><span>{h}</span><small>Horas</small></div>
-            <div className="counter-item"><span>{m}</span><small>Min</small></div>
+            <div className="counter-item"><span>{m}</span><small>Minutos</small></div>
             <div className="counter-item"><span>{s}</span><small>Seg</small></div>
           </div>
         </div>
