@@ -52,7 +52,7 @@ body, html {
 }
 
 .hero-tag {
-  color: #893446;
+  color: #e43359;
   font-family: serif;
   letter-spacing: 4px;
   font-size: 2rem;
@@ -61,7 +61,7 @@ body, html {
 
 .hero-names {
   font-family: 'Great Vibes', cursive;
-  color: #893446;
+  color: #e43359;
   font-size: 3rem;
   margin: 0;
   line-height: 1;
@@ -69,7 +69,7 @@ body, html {
 }
 
 .hero-date {
-  color: #893446;
+  color: #e43359;
   font-family: serif;
   font-size: 1.2rem;
   margin: 15px 0 25px 0; /* 25px es el espacio entre fecha y contador */
